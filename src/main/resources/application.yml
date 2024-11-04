@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/UMC_5th
+    username: root
+    password: lkr990729!
+  jpa:
+    hibernate:
+      ddl-auto: update  # 개발 시에는 update, 초기화가 필요할 경우 create로 변경 가능
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        show_sql: true   # SQL 쿼리를 콘솔에 출력
+        format_sql: true # SQL 쿼리를 보기 좋게 포맷팅
+        use_sql_comments: true # SQL 쿼리에 주석 추가
